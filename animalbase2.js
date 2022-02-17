@@ -3,7 +3,7 @@
 window.addEventListener("DOMContentLoaded", start);
 
 let allAnimals = [];
-let filter = "*";
+let filter;
 
 // The prototype for all animals: 
 const Animal = {
@@ -74,8 +74,6 @@ function all() {
 // filter allAnimals with correc function and put info filterAnimals 
 
 // call display(filteredAnimals)
-
-//addEventListener
 
 async function loadJSON() {
     const response = await fetch("animals.json");
